@@ -17,6 +17,9 @@ html {
     align-items: center;
     height: 600px;
     width: 600px;
+    box-shadow:
+        5px 5px 10px 0 rgba(0, 0, 0, 0.25),
+        -5px -5px 20px 0 rgb(48, 47, 47);
 }
 
 .calculator {
@@ -35,7 +38,7 @@ html {
     margin-bottom: 10px;
     width: 400px;
     height: 40px;
-    font-size: 23px;
+    font-size: 25px;
 }
 
 button {
