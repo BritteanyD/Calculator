@@ -4,4 +4,12 @@ html {
 
 .container {
     background-color: rgb(180, 133, 180);
+    border-radius: 10px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
