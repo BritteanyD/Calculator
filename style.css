@@ -12,4 +12,13 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+}
+
+.display {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 50%;
 }
