@@ -1,3 +1,7 @@
 html {
     background-image: url(https://img.freepik.com/free-vector/pastel-coloured-herringbone-pattern-design_1048-18857.jpg);
 }
+
+.container {
+    background-color: rgb(180, 133, 180);
+}
