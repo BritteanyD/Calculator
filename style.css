@@ -2,9 +2,21 @@ html {
     background-image: url(https://img.freepik.com/free-vector/pastel-coloured-herringbone-pattern-design_1048-18857.jpg);
 }
 
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
 .container {
     background-color: rgb(180, 133, 180);
     border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 600px;
+    width: 600px;
 }
 
 .calculator {
@@ -16,9 +28,18 @@ html {
 }
 
 .display {
+    display: flex;
     background: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     margin-bottom: 10px;
-    width: 50%;
+    width: 400px;
+    height: 40px;
+}
+
+button {
+    border: 10;
+    outline: 100;
+    width: 90px;
+    height: 90px;
 }
