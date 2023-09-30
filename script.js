@@ -18,3 +18,12 @@ function divide(a, b) {
     return a / b;
 }
 console.log("10/5=2", divide(10, 5) === 2)
+
+const a = num1 
+const b = num2
+const operators = ["+", "-", "/", "*"]
+
+function operate (a, operators, b) {
+    return a + b;
+}
+console.log("10+1=11",add)
