@@ -91,3 +91,33 @@ const display0 = document.querySelector('.display');
 zero.addEventListener("click", function(){
     display0.textContent = '0';
 });
+
+const division = document.querySelector('.division');
+const displayD = document.querySelector('.display');
+division.addEventListener("click", function(){
+    displayD.textContent = '/';
+});
+
+const times = document.querySelector('.times');
+const displayT = document.querySelector('.display');
+times.addEventListener("click", function(){
+    displayT.textContent = 'x';
+});
+
+const minus = document.querySelector('.minus');
+const displayM = document.querySelector('.display');
+minus.addEventListener("click", function(){
+    displayM.textContent = '-';
+});
+
+const plus = document.querySelector('.plus');
+const displayP = document.querySelector('.display');
+plus.addEventListener("click", function(){
+    displayP.textContent = '+';
+});
+
+const equal = document.querySelector('.equal');
+const displayE = document.querySelector('.display');
+equal.addEventListener("click", function(){
+    displayE.textContent = '=';
+});
