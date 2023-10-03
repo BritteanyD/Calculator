@@ -21,16 +21,17 @@ console.log("10/5=2", divide(10, 5) === 2)
 
 
 function operate(a, operator, b) {
+    a = parseFloat(a);
+    b = parseFloat(b);
     if (operator === "+")
         return add(a, b);
     else if (operator === "-")
         return subtract(a, b);
-    else if (operator === "*")
+    else if (operator === "x")
         return multiply(a, b);
     else if (operator === "/")
         return divide(a, b);
-}
-console.log("2-2=0", operate(2, "-", 2) === 0)
+};
 
 let num1 = '';
 let num2 = '';
@@ -45,9 +46,9 @@ function showDisplay() {
 const one = document.querySelector('.one');
 one.addEventListener("click", function () {
     if (!operators) {
-        num1 += '1'; // Append '1' to num1
+        num1 += '1';
     } else {
-        num2 += '1'; // Append '1' to the secondNumber
+        num2 += '1';
     }
     showDisplay();
 });
@@ -168,6 +169,12 @@ plus.addEventListener("click", function () {
 
 const equal = document.querySelector('.equal');
 equal.addEventListener("click", function () {
-    displayE.textContent = '=';
+    if (num1 && num2 && operators) {
+        const result = operate(num1, operators, num2);
+        num1 = String(result);
+        operators = '';
+        num2 = '';
+        showDisplay();
+    }
 });
 
