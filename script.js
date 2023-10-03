@@ -32,92 +32,142 @@ function operate(a, operator, b) {
 }
 console.log("2-2=0", operate(2, "-", 2) === 0)
 
+let num1 = '';
+let num2 = '';
+let operators = '';
+
+const display = document.querySelector('.display');
+
+function showDisplay() {
+    display.textContent = num1 + operators + num2;
+}
+
 const one = document.querySelector('.one');
-const display1 = document.querySelector('.display');
 one.addEventListener("click", function () {
-    display1.textContent = '1';
+    if (!operators) {
+        num1 += '1'; // Append '1' to num1
+    } else {
+        num2 += '1'; // Append '1' to the secondNumber
+    }
+    showDisplay();
 });
 
 const two = document.querySelector('.two');
-const display2 = document.querySelector('.display');
 two.addEventListener("click", function () {
-    display2.textContent = '2';
+    if (!operators) {
+        num1 += '2';
+    } else {
+        num2 += '2';
+    }
+    showDisplay();
 });
 
 const three = document.querySelector('.three');
-const display3 = document.querySelector('.display');
 three.addEventListener("click", function () {
-    display3.textContent = '3';
+    if (!operators) {
+        num1 += '3';
+    } else {
+        num2 += '3';
+    }
+    showDisplay();
 });
 
 const four = document.querySelector('.four');
-const display4 = document.querySelector('.display');
 four.addEventListener("click", function () {
-    display4.textContent = '4';
+    if (!operators) {
+        num1 += '4';
+    } else {
+        num2 += '4';
+    }
+    showDisplay();
 });
 
 const five = document.querySelector('.five');
-const display5 = document.querySelector('.display');
 five.addEventListener("click", function () {
-    display5.textContent = '5';
+    if (!operators) {
+        num1 += '5';
+    } else {
+        num2 += '5';
+    }
+    showDisplay();
 });
 
 const six = document.querySelector('.six');
-const display6 = document.querySelector('.display');
 six.addEventListener("click", function () {
-    display6.textContent = '6';
+    if (!operators) {
+        num1 += '6';
+    } else {
+        num2 += '6';
+    }
+    showDisplay();
 });
 
 const seven = document.querySelector('.seven');
-const display7 = document.querySelector('.display');
 seven.addEventListener("click", function () {
-    display7.textContent = '7';
+    if (!operators) {
+        num1 += '7';
+    } else {
+        num2 += '7';
+    }
+    showDisplay();
 });
 
 const eight = document.querySelector('.eight');
-const display8 = document.querySelector('.display');
-eight.addEventListener("click", function(){
-    display8.textContent = '8';
+eight.addEventListener("click", function () {
+    if (!operators) {
+        num1 += '8';
+    } else {
+        num2 += '8';
+    }
+    showDisplay();
 });
 
 const nine = document.querySelector('.nine');
-const display9 = document.querySelector('.display');
-nine.addEventListener("click", function(){
-    display9.textContent = '9';
+nine.addEventListener("click", function () {
+    if (!operators) {
+        num1 += '9';
+    } else {
+        num2 += '9';
+    }
+    showDisplay();
 });
 
 const zero = document.querySelector('.zero');
-const display0 = document.querySelector('.display');
-zero.addEventListener("click", function(){
-    display0.textContent = '0';
+zero.addEventListener("click", function () {
+    if (!operators) {
+        num1 += '0';
+    } else {
+        num2 += '0';
+    }
+    showDisplay();
 });
 
 const division = document.querySelector('.division');
-const displayD = document.querySelector('.display');
-division.addEventListener("click", function(){
-    displayD.textContent = '/';
+division.addEventListener("click", function () {
+    operators = '/';
+    showDisplay();
 });
 
 const times = document.querySelector('.times');
-const displayT = document.querySelector('.display');
-times.addEventListener("click", function(){
-    displayT.textContent = 'x';
+times.addEventListener("click", function () {
+    operators = 'x';
+    showDisplay();
 });
 
 const minus = document.querySelector('.minus');
-const displayM = document.querySelector('.display');
-minus.addEventListener("click", function(){
-    displayM.textContent = '-';
+minus.addEventListener("click", function () {
+    operators = '-';
+    showDisplay();
 });
 
 const plus = document.querySelector('.plus');
-const displayP = document.querySelector('.display');
-plus.addEventListener("click", function(){
-    displayP.textContent = '+';
+plus.addEventListener("click", function () {
+    operators = '+';
+    showDisplay();
 });
 
 const equal = document.querySelector('.equal');
-const displayE = document.querySelector('.display');
-equal.addEventListener("click", function(){
+equal.addEventListener("click", function () {
     displayE.textContent = '=';
 });
+
