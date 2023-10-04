@@ -145,24 +145,52 @@ zero.addEventListener("click", function () {
 
 const division = document.querySelector('.division');
 division.addEventListener("click", function () {
+    if (num1 && num2 && operators) {
+        const result = operate(num1, operators, num2);
+        num1 = String(result);
+        operators = '/';
+        num2 = '';
+        showDisplay();
+    }
     operators = '/';
     showDisplay();
 });
 
 const times = document.querySelector('.times');
 times.addEventListener("click", function () {
+    if (num1 && num2 && operators) {
+        const result = operate(num1, operators, num2);
+        num1 = String(result);
+        operators = 'x';
+        num2 = '';
+        showDisplay();
+    }
     operators = 'x';
     showDisplay();
 });
 
 const minus = document.querySelector('.minus');
 minus.addEventListener("click", function () {
+    if (num1 && num2 && operators) {
+        const result = operate(num1, operators, num2);
+        num1 = String(result);
+        operators = '-';
+        num2 = '';
+        showDisplay();
+    }
     operators = '-';
     showDisplay();
 });
 
 const plus = document.querySelector('.plus');
 plus.addEventListener("click", function () {
+    if (num1 && num2 && operators) {
+        const result = operate(num1, operators, num2);
+        num1 = String(result);
+        operators = '+';
+        num2 = '';
+        showDisplay();
+    }
     operators = '+';
     showDisplay();
 });
