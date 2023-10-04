@@ -23,6 +23,9 @@ console.log("10/5=2", divide(10, 5) === 2)
 function operate(a, operator, b) {
     a = parseFloat(a);
     b = parseFloat(b);
+    if (b === 0) {
+        alert('Error: Division by zero no allowed')
+    }
     if (operator === "+")
         return add(a, b);
     else if (operator === "-")
