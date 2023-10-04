@@ -207,11 +207,14 @@ equal.addEventListener("click", function () {
         num2 = '';
         showDisplay();
     }
+    num1 = '';
+    operators = '';
+    num2 = '';
 });
 
 const clear = document.querySelector('.clear');
 clear.addEventListener("click", function () {
-        num1 = '0';
+        num1 = '';
         operators = '';
         num2 = '';
         showDisplay();
