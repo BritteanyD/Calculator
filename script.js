@@ -23,17 +23,24 @@ console.log("10/5=2", divide(10, 5) === 2)
 function operate(a, operator, b) {
     a = parseFloat(a);
     b = parseFloat(b);
-    if (b === 0) {
-        alert('Error: Division by zero not allowed')
+    debugger
+    if (operator === "+") {
+        return add(a, b)
     }
-    if (operator === "+")
-        return add(a, b);
-    else if (operator === "-")
-        return subtract(a, b);
-    else if (operator === "x")
-        return multiply(a, b);
-    else if (operator === "/")
-        return divide(a, b);
+    else if (operator === "-") {
+        return subtract(a, b)
+    }
+    else if (operator === "x") {
+        return multiply(a, b)
+    }
+    else if (operator === "/") {
+        if (b === 0) {
+            return 'Error: Division by zero not allowed';
+        }
+        else if (b != 0) {
+            return divide(a, b)
+        }
+    }
 };
 
 let num1 = '';
@@ -214,9 +221,9 @@ equal.addEventListener("click", function () {
 
 const clear = document.querySelector('.clear');
 clear.addEventListener("click", function () {
-        num1 = '';
-        operators = '';
-        num2 = '';
-        showDisplay();
-    });
+    num1 = '';
+    operators = '';
+    num2 = '';
+    showDisplay();
+});
 
