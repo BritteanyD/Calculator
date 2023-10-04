@@ -24,7 +24,7 @@ function operate(a, operator, b) {
     a = parseFloat(a);
     b = parseFloat(b);
     if (b === 0) {
-        alert('Error: Division by zero no allowed')
+        alert('Error: Division by zero not allowed')
     }
     if (operator === "+")
         return add(a, b);
@@ -208,4 +208,12 @@ equal.addEventListener("click", function () {
         showDisplay();
     }
 });
+
+const clear = document.querySelector('.clear');
+clear.addEventListener("click", function () {
+        num1 = '0';
+        operators = '';
+        num2 = '';
+        showDisplay();
+    });
 
